@@ -1,0 +1,44 @@
+
+<div class="container">
+    <br>
+    <div class="row">
+        <h3 style="color:purple; font-weight: bold;">{{experience.organisme}}</h3>
+    </div>
+    <div class="row">
+        <h4>{{experience.poste}} - {{experience.periode}}</h4>
+        <br>
+        <br>
+    </div>
+    <div class="row">
+        <br>
+        <h5 style="color:purple; ">Contexte</h5>
+    </div>
+    <div class="row">
+        <h6 style="text-align:justify">{{experience.contexte}}</h6>
+    </div>
+    <br>
+    <div class="row">
+        <br>
+        <h5 style="color:purple; ">Missions</h5>
+    </div>
+    <div class="row" >
+        <ul *ngFor="let mission of experience.missions">
+            <li style="text-align:justify">
+                {{mission}}
+            </li>
+        </ul>
+    </div>
+    <br>
+    <div class="row">
+        <br>
+        <h5 style="color:purple; ">Environnement technique et fonctionnel</h5>
+    </div>
+    <div class="row" >
+        <ul *ngFor="let environnement of experience.environnement_technique_fonctionnel">
+            <li style="text-align:justify">
+                {{environnement}}
+            </li>
+        </ul>
+    </div>
+    <br>
+</div>

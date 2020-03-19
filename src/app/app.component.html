@@ -1,0 +1,103 @@
+<!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark blue lighten-1" [containerInside]="false">
+
+  <!-- Navbar brand -->
+  <mdb-navbar-brand><a class="navbar-brand" href="#" routerLink="informations-personnelles">Team Leader</a></mdb-navbar-brand>
+
+  <!-- Collapsible content -->
+  <links>
+
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link waves-light" mdbWavesEffect routerLink="informations-personnelles">Informations Clé<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" mdbWavesEffect routerLinkActive="active" routerLink="competences">Compétences</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" mdbWavesEffect routerLink="formations-et-certifications">Formations et certifications</a>
+      </li>
+
+      <!-- Dropdown -->
+      <li class="nav-item dropdown" dropdown>
+        <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+          Expériences<span class="caret"></span></a>
+        <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu" >
+
+          <div class="container" class="dropdown1"  >
+<div *ngFor="let experience of experiences" [routerLink]="['/experience', experience.id]">
+
+            <div class="row" class="dropdown-item waves-light" mdbWavesEffect >
+              <a>
+              <div class="col-sm">
+                {{experience.organisme}}
+              </div>
+              <div class="col-sm">
+                {{experience.periode}}
+              </div>
+              <div class="col-sm">
+                <img width="40" height="40" src={{experience.logo}}>
+              </div>
+            </a>
+            </div>
+
+            <div class="row" class="dropdown-item waves-light" mdbWavesEffect>
+              <div class="divider dropdown-divider"></div>
+            </div>
+          </div>
+
+
+
+
+
+          </div>
+
+
+ 
+
+ 
+
+
+
+
+
+
+        </div>
+      </li>
+
+    </ul>
+    <!-- Links -->
+
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+      <li class="nav-item">
+        <a class="nav-link">1 <mdb-icon fas icon="envelope"></mdb-icon></a>
+      </li>
+      
+      <a href="https://github.com/hamdibejinovencia" target="_blank">
+          <img src="assets\git_logo.png"  alt="" ></a>
+
+      <a href="https://www.linkedin.com/in/hamdi-beji-35330338/" target="_blank">
+          <img src="assets\linkedin_logo.png"  alt="" class="img-fluid rounded-circle z-depth-0"></a>
+      
+
+      <li class="nav-item avatar dropdown" dropdown>
+        <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+          <img src="assets\644277_10200433667796277_342154042_n.jpg" alt="" class="img-fluid rounded-circle z-depth-0"></a>
+
+
+
+
+        <div *dropdownMenu class="dropdown-menu dropdown-menu-right dropdown dropdown-primary" role="menu">
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#">My account</a>
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Log out</a>
+        </div>
+      </li>
+    </ul>
+  </links>
+  <!-- Collapsible content -->
+
+</mdb-navbar>
+<!--/.Navbar-->
+
+<router-outlet></router-outlet>
