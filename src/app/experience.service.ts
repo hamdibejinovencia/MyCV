@@ -222,7 +222,7 @@ export class ExperienceService {
     {"id":9, 
     "organisme":"Institut Supérieur de Gestion de Tunis", 
     "periode":"Septembre 2010 à mars 2014",
-    "logo":"/assets/isg_logo.png", 
+    "logo":"./assets/isg_logo.png", 
     "poste":"Coach, Enseignant Expert - CDD - Tunis - Tunisie",
     "contexte":"J'ai assuré, en tant que formateur expert, des modules destinés aux étudiants de différents niveaux. Les matières enseignées avaient pour objectif de permettre à l'apprenant d'acquérir des connaissances approfondies en algorithmique, en logique mais aussi en matière d'outils informatiques appliqués à la gestion. J'ai animé également des clubs et ce en coachant des étudiants en leur apprenant les techniques de \"Problem Solving\". Je me suis exercé quant aux grands acteurs du Cloud Computing (AWS et Azure) en exploitant leurs services et les diffuser aux futurs développeurs/testeurs.", 
     "missions":[
