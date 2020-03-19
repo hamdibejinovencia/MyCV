@@ -10,7 +10,7 @@ export class ExperienceService {
     {"id":1, 
     "organisme":"CIAMT", 
     "periode":"Depuis avril 2019",
-    "logo":"/assets/ciamt_logo.png", 
+    "logo":"./assets/ciamt_logo.png", 
     "poste":"Consultant .NET & Xamarin Forms",
     "contexte":"Fondé en 1953, le CIAMT, Centre Inter-entreprises et Artisanal de santé au travail, est une association à but non lucratif (loi 1901) agréée par le Ministère du Travail pour assurer sa mission à Paris et en Île de France. Il est administré par les membres du Conseil d'Administration composé de représentants employeurs et de représentants salariés d'entreprises adhérentes au service [https://www.ciamt.org/qui-sommes-nous/]. Ils ont instauré auparavant une application mobile nommée e-TimeSanté pour la gestion des fiches d'entreprises assurée par les intervenants. L'ancienne application a déclenché de multiples bogues quant à la synchronisation des données. De ce fait, je m'exerce actuellement dans un projet de migration de l'ancienne application mobile e-TimeSanté vers une nouvelle application que l'on a nommée eTS2. Je gère une équipe qui se charge d'assurer la migration tout en faisant des dailies afin de s'assurer du bon déroulement des tâches. Un système de gestions des tickets a été mis en place afin de faire le suivi des tickets et leur résolution. Un Team Foundation Server (TFS) a été mis en place également pour l'enregistrement du code source mais aussi le suivi des processus de test."
     
@@ -62,7 +62,7 @@ export class ExperienceService {
     {"id":2, 
     "organisme":"SIMAC", 
     "periode":"Octobre 2018 à avril 2019",
-    "logo":"/assets/simac_logo.png", 
+    "logo":"./assets/simac_logo.png", 
     "poste":"Tech Lead",
     "contexte":"SIMAC investit depuis 35 ans dans le domaine des solutions informatiques pour offrir des solutions évolutives adaptées sur mesure aux besoins spécifiques des administrations publiques et des entreprises de toutes tailles (PME-PMI-MGE). S’adressant à tous les secteurs d’activité : Fonctions publiques, banques et assurances, informatique et Télécoms, commerce et distribution,etc [http://www.simac.tn/].", 
     "missions":[
@@ -90,7 +90,7 @@ export class ExperienceService {
     {"id":3, 
     "organisme":"Cabinet d'avocat", 
     "periode":"Janvier 2018 à septembre 2018",
-    "logo":"/assets/cabinet_avocat_logo.jpeg", 
+    "logo":"./assets/cabinet_avocat_logo.jpeg", 
     "poste":"Tech Lead",
     "contexte":"Un cabinet d'avocat a détecté la nécessité d'automatiser les tâches manuelles des affaires judiciaires et ce on optant pour un système informatique permettant la gestion du cabinet notamment les dossiers des clients ainsi que leurs affaires déposées dans les différents tribunaux.", 
     "missions":[
@@ -115,7 +115,7 @@ export class ExperienceService {
     {"id":4, 
     "organisme":"Laboratoires de Recherche", 
     "periode":"Mars 2017 à décembre 2017",
-    "logo":"/assets/labo_recherche_logo.png", 
+    "logo":"./assets/labo_recherche_logo.png", 
     "poste":"Consultant Fullstack",
     "contexte":"Le contexte général dans lequel a été fait ce travail est la recherche scientifique dans le domaine médical. L'objet de cette mission était de contribuer à la recherche au profit de la communauté scientifique et sa promotion.", 
     "missions":[
@@ -139,7 +139,7 @@ export class ExperienceService {
     {"id":5, 
     "organisme":"État de la République Démocratique du Congo (RDC)", 
     "periode":"Septembre 2016 à février 2017",
-    "logo":"/assets/rdc_logo.png", 
+    "logo":"./assets/rdc_logo.png", 
     "poste":"Développeur Mobile",
     "contexte":"Parallèlement avec l'application Web OpenPRH précédemment décrite, le gouvernement Congolais a détecté un besoin pour l'implémentation d'une application mobile sous forme d'un portail dont se servent les fonctionnaires de l'État faisant partie du Ministère de la fonction publique à la RDC.", 
     "missions":[
@@ -160,7 +160,7 @@ export class ExperienceService {
     {"id":6, 
     "organisme":"Hertz", 
     "periode":"Novembre 2015 à août 2016",
-    "logo":"/assets/hertz_logo.png", 
+    "logo":"./assets/hertz_logo.png", 
     "poste":"Développeur .NET",
     "contexte":"L'agence de location de voitures avant besoin d'informatiser son système en le rendant plus autonome mais aussi d'automatiser certaines tâches qui se faisaient auparavant manuellement.", 
     "missions":[
@@ -181,7 +181,7 @@ export class ExperienceService {
     {"id":7, 
     "organisme":"Banque Nationale Agricole (BNA)", 
     "periode":"Décembre 2014 à octobre 2015",
-    "logo":"/assets/bna_logo.png", 
+    "logo":"./assets/bna_logo.png", 
     "poste":"Consultant Fullstack",
     "contexte":"La mission consiste en la réalisation d’un outil de supervision des données agricoles au sein d'une banque étatique à savoir la BNA. Les tâches réalisées lors de cette mission dont énumérées ci-dessous :", 
     "missions":[
@@ -203,7 +203,7 @@ export class ExperienceService {
     {"id":8, 
     "organisme":"Vistaprint", 
     "periode":"Mars 2014 à novembre 2014",
-    "logo":"/assets/vistaprint_logo.png", 
+    "logo":"./assets/vistaprint_logo.png", 
     "poste":"Consultant Fullstack",
     "contexte":"La mission consiste en la réalisation d’un outil de gestion « Board Entreprise » dont les principales tâches qui s'y intègrent sont les suivantes :", 
     "missions":[
