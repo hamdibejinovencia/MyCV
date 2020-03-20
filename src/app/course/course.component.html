@@ -1,0 +1,10 @@
+<br>
+<div class="container">
+    <div class="row">
+        <div>
+            <div *ngFor="let chapitre of course.chapitres">
+                <a target="_blank" href="{{chapitre.path}}"><img height="40" weight="40" src="{{chapitre.logo}}">  {{chapitre.title}}</a>
+            </div>
+        </div>
+    </div>
+</div>

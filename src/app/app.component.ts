@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ExperienceService } from './experience.service';
+import { CourseService } from './course.service';
 
 @Component({
   selector: 'app-root',
@@ -10,9 +11,11 @@ export class AppComponent {
   title = 'Hamdi BEJI - Team Leader';
 
 experiences:any[];
-  constructor(private service:ExperienceService) { 
+courses:any[];
+  constructor(private experienceService:ExperienceService, private courseService:CourseService) { 
 
-this.experiences=service.experiences;
+this.experiences=experienceService.experiences;
+this.courses=courseService.courses;
 
   }
 

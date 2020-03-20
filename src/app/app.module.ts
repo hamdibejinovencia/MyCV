@@ -11,13 +11,15 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
 import { CompetencesComponent } from './competences/competences.component';
 import { FormationsEtCertificationsComponent } from './formations-et-certifications/formations-et-certifications.component';
 import { ExperienceComponent } from './experience/experience.component';
+import { CourseComponent } from './course/course.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CompetencesComponent,
     FormationsEtCertificationsComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    CourseComponent
   ],
   imports: [
     BrowserModule,

@@ -47,21 +47,39 @@
             </div>
           </div>
 
-
-
-
-
           </div>
 
+        </div>
+      </li>
 
+
+      <!-- Dropdown -->
+      <li class="nav-item dropdown" dropdown>
+        <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+          Cours<span class="caret"></span></a>
+        <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu" >
+
+          <div class="container" class="dropdown1"  >
+<div *ngFor="let course of courses" [routerLink]="['/course', course.id]">
+
+            <div class="row" class="dropdown-item waves-light" mdbWavesEffect >
+              <a>
+              <div class="col-sm">
+                {{course.title}}
+              </div>
  
+              <div class="col-sm">
+                <img width="40" height="40" src={{course.logo}}>
+              </div>
+            </a>
+            </div>
 
- 
+            <div class="row" class="dropdown-item waves-light" mdbWavesEffect>
+              <div class="divider dropdown-divider"></div>
+            </div>
+          </div>
 
-
-
-
-
+          </div>
 
         </div>
       </li>
@@ -99,5 +117,13 @@
 
 </mdb-navbar>
 <!--/.Navbar-->
+
+<!-- Side navigation links -->
+
+<!--/. Side navigation links -->
+
+
+
+
 
 <router-outlet></router-outlet>

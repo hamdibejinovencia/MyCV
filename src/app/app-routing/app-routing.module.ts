@@ -5,6 +5,7 @@ import { InformationsPersonnellesComponent } from '../informations-personnelles/
 import { CompetencesComponent } from '../competences/competences.component';
 import { FormationsEtCertificationsComponent } from '../formations-et-certifications/formations-et-certifications.component';
 import { ExperienceComponent } from '../experience/experience.component';
+import { CourseComponent } from '../course/course.component';
 
 
 
@@ -29,6 +30,10 @@ const routes: Routes = [
   {
     path:'experience/:id',
     component:ExperienceComponent
+  },
+  {
+    path:'course/:id',
+    component:CourseComponent
   }
 ];
 
