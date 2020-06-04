@@ -1,0 +1,85 @@
+<div class="card m-3">
+    <h5 class="card-header">Envoyer un message à Hamdi BEJI</h5>
+    <div class="card-body">
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+            <div class="form-row">
+                <div class="form-group col">
+                    <label>Civilité</label>
+                    <select formControlName="EML_CVL" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.EML_CVL.errors }">
+                        <option value=""></option>
+                        <option value="Monsieur">Monsieur</option>
+                        <option value="Madame">Madame</option>
+                    </select>
+                    <div *ngIf="submitted && f.EML_CVL.errors" class="invalid-feedback">
+                        <div *ngIf="f.EML_CVL.errors.required">La civilité est requise !</div>
+                    </div>
+                </div>
+                <div class="form-group col-5">
+                    <label>Prénom</label>
+                    <input type="text" formControlName="EML_PRE" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.EML_PRE.errors }" />
+                    <div *ngIf="submitted && f.EML_PRE.errors" class="invalid-feedback">
+                        <div *ngIf="f.EML_PRE.errors.required">Le prénom est requis !</div>
+                    </div>
+                </div>
+                <div class="form-group col-5">
+                    <label>Nom</label>
+                    <input type="text" formControlName="EML_NOM" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.EML_NOM.errors }" />
+                    <div *ngIf="submitted && f.EML_NOM.errors" class="invalid-feedback">
+                        <div *ngIf="f.EML_NOM.errors.required">Le nom est requis !</div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="text" formControlName="EML_EML" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.EML_EML.errors }" />
+                <div *ngIf="submitted && f.EML_EML.errors" class="invalid-feedback">
+                    <div *ngIf="f.EML_EML.errors.required">L'adresse électronique est requise !</div>
+                    <div *ngIf="f.EML_EML.errors.email">L'adresse électronique devrait être valide !</div>
+                </div>
+            </div>
+
+
+            <!--<div class="form-row">
+                <div class="form-group col">
+                    <label>Password</label>
+                    <input type="password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+                    <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                        <div *ngIf="f.password.errors.required">Password is required</div>
+                        <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
+                    </div>
+                </div>
+                <div class="form-group col">
+                    <label>Confirm Password</label>
+                    <input type="password" formControlName="confirmPassword" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.confirmPassword.errors }" />
+                    <div *ngIf="submitted && f.confirmPassword.errors" class="invalid-feedback">
+                        <div *ngIf="f.confirmPassword.errors.required">Confirm Password is required</div>
+                        <div *ngIf="f.confirmPassword.errors.mustMatch">Passwords must match</div>
+                    </div>
+                </div>
+            </div>-->
+
+
+            <div class="form-row">
+                <div class="form-group col">
+                    <label>Mesaage</label>
+                    <textarea type="text" formControlName="EML_MSG" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.EML_MSG.errors }" >
+                    </textarea>
+                    <div *ngIf="submitted && f.EML_MSG.errors" class="invalid-feedback">
+                    <div *ngIf="f.EML_MSG.errors.required">Le message est requis</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="form-group form-check">
+                <input type="checkbox" formControlName="EML_TRM" id="acceptTerms" class="form-check-input" [ngClass]="{ 'is-invalid': submitted && f.EML_TRM.errors }" />
+                <label for="EML_TRM" class="form-check-label">Hamdi BEJI vous répondra à votre message sur l'adresse inscrite ci-dessus dès que possible.</label>
+                <div *ngIf="submitted && f.EML_TRM.errors" class="invalid-feedback">Avant d'envoyer le message, vérifiez votre adresse puis cocher cette case !</div>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-primary mr-1">Envoyer</button>
+                <button class="btn btn-secondary" type="reset" (click)="onReset()">Annuler</button>
+            </div>
+        </form>
+    </div>
+</div>

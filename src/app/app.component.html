@@ -2,7 +2,7 @@
 <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark blue lighten-1" [containerInside]="false">
 
   <!-- Navbar brand -->
-  <mdb-navbar-brand><a class="navbar-brand" href="#" routerLink="informations-personnelles">Team Leader</a></mdb-navbar-brand>
+  <mdb-navbar-brand><a class="navbar-brand" href="#" routerLink="informations-personnelles">Hamdi BEJI</a></mdb-navbar-brand>
 
   <!-- Collapsible content -->
   <links>
@@ -10,13 +10,17 @@
     <!-- Links -->
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link waves-light" mdbWavesEffect routerLink="informations-personnelles">Informations Clé<span class="sr-only">(current)</span></a>
+        <a class="nav-link waves-light" mdbWavesEffect routerLink="informations-personnelles">Consultant .NET
+          <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link waves-light" mdbWavesEffect routerLinkActive="active" routerLink="competences">Compétences</a>
+        <a class="nav-link waves-light" mdbWavesEffect routerLinkActive="active" routerLink="competences">Compétences
+          <span class="sr-only">(current)</span>
+
+        </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link waves-light" mdbWavesEffect routerLink="formations-et-certifications">Formations et certifications</a>
+        <a [routerLinkActive]="['active']" class="nav-link waves-light" mdbWavesEffect routerLink="formations-et-certifications">Formations et certifications</a>
       </li>
 
       <!-- Dropdown -->
@@ -88,9 +92,12 @@
     <!-- Links -->
 
     <ul class="navbar-nav ml-auto nav-flex-icons">
-      <li class="nav-item">
-        <a class="nav-link">1 <mdb-icon fas icon="envelope"></mdb-icon></a>
-      </li>
+
+      <a  routerLink="/email" routerLinkActive="active-link">
+        <img src="assets\message_icon.png"  alt="" ></a>
+
+      <a href="https://www.youtube.com/channel/UCN0T2f7OskcHaD3J7D-dZnA" target="_blank">
+        <img src="assets\youtube_logo.png"  alt="" ></a>
       
       <a href="https://github.com/hamdibejinovencia" target="_blank">
           <img src="assets\git_logo.png"  alt="" ></a>
@@ -107,8 +114,8 @@
 
 
         <div *dropdownMenu class="dropdown-menu dropdown-menu-right dropdown dropdown-primary" role="menu">
-          <a class="dropdown-item waves-light" mdbWavesEffect href="#">My account</a>
-          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Log out</a>
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Under Construction</a>
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Under Construction</a>
         </div>
       </li>
     </ul>
