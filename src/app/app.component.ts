@@ -61,7 +61,7 @@ export class AppComponent {
 experiences:any[];
 courses:any[];
   constructor(private experienceService:ExperienceService, private courseService:CourseService,private datePipe: DatePipe) { 
-    this.datePipe = new DatePipe('fr-FR'); // Use your own locale
+    //this.datePipe = new DatePipe('fr-FR'); // Use your own locale
 
 this.experiences=experienceService.experiences;
 this.courses=courseService.courses;
