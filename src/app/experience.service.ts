@@ -8,8 +8,33 @@ export class ExperienceService {
   
   experiences=[
     {"id":1, 
+    "organisme":"AIU", 
+    "periode":"Aout 2020 à Février 2021",
+    "logo":"./assets/aiu_logo.svg", 
+    "poste":"Développeur Angular 10",
+    "contexte":"Développement de l'application de WA côté client (Angular) pour la gestion des WhereAbouts des athlètes, leur scoring et leur suivi pour leur faire passer des tests dont les résultats dépendent de leur hygiène de vie et de leurs déplacements. L'application gère ainsi tous ces éléments et permet à ses utilisateurs de contrôler les différentes athlètes et leur comportement dans le cadre de leurs compétitions mais aussi dans le rituel de leur vie quotidienne."
+    
+    , 
+    "missions":[
+      "Développement du Front-End : Home Page (Multilingue, multi-thème, sauvegarde des settings des users), Gestion des athlètes, Upload des fichiers, etc.",
+      "Collaboration avec l'équipe du backend et du test pour vérifier les API, les valider et les consommer depuis le client.",
+      "Participation et échange dans le cadre des daily meetings et des réunions pour étudier l'existant et discuter la réalisation des US avec beaucoup d'agilité (Scrum sur Azure DevOps)",
+      "Greffer le composant de Angular Material Design dans toute l'application pour assurer une meilleure ergonomie, un meilleur design et rendre l'application 'responsive'.",
+      "Implémenter une interface permettant le téléchargement des rapports issus de Adams et de AIU afin d'intégrer leurs données dans une base de données hébergée sur Azure et ce via des requêtes HTTP implémentées dans une solution ASP.NET Core de Web API.",
+      "Implémenter les chartes graphiques en utilisant ChartJs.",
+      "Intégrer les iFrames de Power BI dans l'outil servant pour le reporting.",
+      "Sauvegarder les préférences des utilisateurs du côté client en les stockant dans LocalStorage et SessionStorage.",
+      "Affiner l'affichage des pages réalisées avec Flex Layout et Material Design"
+    ], 
+    "environnement_technique_fonctionnel":[
+
+
+      "Angular 10, TypeScript, HTML5, CSS3, Angular Material Design, FlexLayout, MSAL, Azure Active Directory, Azure DevOps, Azure App Service, Azure PostgreSQL, Visual Studio Code, Visual Studio 2019, Postman, Scrum, Agile, etc"
+    ]
+    },
+    {"id":2, 
     "organisme":"CIAMT", 
-    "periode":"Depuis avril 2019",
+    "periode":"Avril 2019 à Juillet 2020",
     "logo":"./assets/ciamt_logo.png", 
     "poste":"Consultant .NET & Xamarin Forms",
     "contexte":"Fondé en 1953, le CIAMT, Centre Inter-entreprises et Artisanal de santé au travail, est une association à but non lucratif (loi 1901) agréée par le Ministère du Travail pour assurer sa mission à Paris et en Île de France. Il est administré par les membres du Conseil d'Administration composé de représentants employeurs et de représentants salariés d'entreprises adhérentes au service [https://www.ciamt.org/qui-sommes-nous/]. Ils ont instauré auparavant une application mobile nommée e-TimeSanté pour la gestion des fiches d'entreprises assurée par les intervenants. L'ancienne application a déclenché de multiples bogues quant à la synchronisation des données. De ce fait, je m'exerce actuellement dans un projet de migration de l'ancienne application mobile e-TimeSanté vers une nouvelle application que l'on a nommée eTS2. Je gère une équipe qui se charge d'assurer la migration tout en faisant des dailies afin de s'assurer du bon déroulement des tâches. Un système de gestions des tickets a été mis en place afin de faire le suivi des tickets et leur résolution. Un Team Foundation Server (TFS) a été mis en place également pour l'enregistrement du code source mais aussi le suivi des processus de test."
@@ -59,7 +84,7 @@ export class ExperienceService {
     ]
     },
     
-    {"id":2, 
+    {"id":3, 
     "organisme":"SIMAC", 
     "periode":"Octobre 2018 à avril 2019",
     "logo":"./assets/simac_logo.png", 
@@ -87,7 +112,7 @@ export class ExperienceService {
     },
     
     
-    {"id":3, 
+    {"id":4, 
     "organisme":"Cabinet d'avocat", 
     "periode":"Janvier 2018 à septembre 2018",
     "logo":"./assets/cabinet_avocat_logo.jpeg", 
@@ -112,7 +137,7 @@ export class ExperienceService {
     ]
     },
     
-    {"id":4, 
+    {"id":5, 
     "organisme":"Laboratoires de Recherche", 
     "periode":"Mars 2017 à décembre 2017",
     "logo":"./assets/labo_recherche_logo.png", 
@@ -136,7 +161,7 @@ export class ExperienceService {
     ]
     },
     
-    {"id":5, 
+    {"id":6, 
     "organisme":"État de la République Démocratique du Congo (RDC)", 
     "periode":"Septembre 2016 à février 2017",
     "logo":"./assets/rdc_logo.png", 
@@ -157,7 +182,7 @@ export class ExperienceService {
     ]
     },
     
-    {"id":6, 
+    {"id":7, 
     "organisme":"Hertz", 
     "periode":"Novembre 2015 à août 2016",
     "logo":"./assets/hertz_logo.png", 
@@ -178,7 +203,7 @@ export class ExperienceService {
     ]
     },
     
-    {"id":7, 
+    {"id":8, 
     "organisme":"Banque Nationale Agricole (BNA)", 
     "periode":"Décembre 2014 à octobre 2015",
     "logo":"./assets/bna_logo.png", 
@@ -200,7 +225,7 @@ export class ExperienceService {
     ]
     },
     
-    {"id":8, 
+    {"id":9, 
     "organisme":"Vistaprint", 
     "periode":"Mars 2014 à novembre 2014",
     "logo":"./assets/vistaprint_logo.png", 
@@ -219,7 +244,7 @@ export class ExperienceService {
     ]
     },
     
-    {"id":9, 
+    {"id":10, 
     "organisme":"Institut Supérieur de Gestion de Tunis", 
     "periode":"Septembre 2010 à mars 2014",
     "logo":"./assets/isg_logo.png", 

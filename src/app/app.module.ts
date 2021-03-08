@@ -14,7 +14,7 @@ import { ExperienceComponent } from './experience/experience.component';
 import { CourseComponent } from './course/course.component';
 import { EmailComponent } from './email/email.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http";
-import { CommonModule } from '@angular/common';
+import { CommonModule, DatePipe } from '@angular/common';
 
  
 import { ToastrModule } from 'ngx-toastr';
@@ -53,7 +53,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
   [
     MatProgressSpinnerModule
   ],
-  providers: [],
+  providers: [DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

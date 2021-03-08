@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { ExperienceService } from './experience.service';
 import { CourseService } from './course.service';
+import { StringifyOptions } from 'querystring';
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -13,6 +15,10 @@ export class AppComponent {
   h:string; // variable représentant l'heure actuelle
   m:string; // variable représentant la minute actuelle
   s:string; // variable représentant la seconde actuelle
+  j:string; // variable représentant le jour 
+  mm:string; // variable représentant le mois 
+  y:string; // variable représentant l'année
+  date:any;
 
   gc:any;
   private afficherHeure()
@@ -21,6 +27,8 @@ export class AppComponent {
     this.h = this.formatTime(heure.getHours());
     this.m = this.formatTime(heure.getMinutes());
     this.s = this.formatTime(heure.getSeconds());
+    this.date = new Date();
+    this.date = this.datePipe.transform(this.date, 'yyyy-MM-dd');
   }
 
   private mettreAJour()
@@ -52,7 +60,8 @@ export class AppComponent {
 
 experiences:any[];
 courses:any[];
-  constructor(private experienceService:ExperienceService, private courseService:CourseService) { 
+  constructor(private experienceService:ExperienceService, private courseService:CourseService,private datePipe: DatePipe) { 
+    this.datePipe = new DatePipe('fr-FR'); // Use your own locale
 
 this.experiences=experienceService.experiences;
 this.courses=courseService.courses;
