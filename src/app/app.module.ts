@@ -18,6 +18,11 @@ import { CommonModule } from '@angular/common';
 
  
 import { ToastrModule } from 'ngx-toastr';
+import { HomeComponent } from './home/home.component';
+import { Splash1Component } from './splash1/splash1.component';
+import { Splash2Component } from './splash2/splash2.component';
+import { IntroComponent } from './intro/intro.component';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -26,7 +31,12 @@ import { ToastrModule } from 'ngx-toastr';
     FormationsEtCertificationsComponent,
     ExperienceComponent,
     CourseComponent,
-    EmailComponent
+    EmailComponent,
+    HomeComponent,
+    Splash1Component,
+    Splash2Component,
+    IntroComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -36,7 +46,12 @@ import { ToastrModule } from 'ngx-toastr';
     FormsModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    MatProgressSpinnerModule
+  ],
+  exports:
+  [
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

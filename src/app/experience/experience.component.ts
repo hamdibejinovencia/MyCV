@@ -17,10 +17,8 @@ experience:Experience;
   ngOnInit(): void {
     this.sub = this.route.params.subscribe(params => {
       this.id = params['id']; // (+) converts string 'id' to a number
-     
       // In a real app: dispatch action to load the details here.
       this.experience=this.service.experiences[this.id-1];
-      console.log(this.experience);
    });
  
  

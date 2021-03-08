@@ -1,24 +1,30 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from '../app.component';
-import { InformationsPersonnellesComponent } from '../informations-personnelles/informations-personnelles.component';
+import {  HomeComponent } from '../home/home.component';
 import { CompetencesComponent } from '../competences/competences.component';
 import { FormationsEtCertificationsComponent } from '../formations-et-certifications/formations-et-certifications.component';
 import { ExperienceComponent } from '../experience/experience.component';
 import { CourseComponent } from '../course/course.component';
 import { EmailComponent } from '../email/email.component';
+import { Splash1Component } from '../splash1/splash1.component';
+import { Splash2Component } from '../splash2/splash2.component';
+import { IntroComponent } from '../intro/intro.component';
 
 
 
 const routes: Routes = [
-
   {
-      path: 'home',
-      component: AppComponent,
+    path: '',
+    component: IntroComponent,
+}, 
+  {
+      path: 'intro',
+      component: IntroComponent,
   },
   {
-    path:'informations-personnelles',
-    component: InformationsPersonnellesComponent
+    path:'accueil',
+    component: HomeComponent
   },
   {
     path:'competences',
@@ -29,8 +35,16 @@ const routes: Routes = [
     component: FormationsEtCertificationsComponent
   },
   {
+    path:'experiences',
+    component:Splash1Component
+  },
+  {
     path:'experience/:id',
     component:ExperienceComponent
+  },
+  {
+    path:'cours',
+    component:Splash2Component
   },
   {
     path:'course/:id',

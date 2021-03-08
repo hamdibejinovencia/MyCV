@@ -1,0 +1,413 @@
+body {
+
+    font-family: 'Anonymous Pro', monospace;
+    background-color: rgb(25,25,25);
+  }
+  video { 
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: 25%;
+      height: 25%;
+      z-index: -100;
+      transform: translateX(-50%) translateY(-50%);
+   background:black;
+    background-size: cover;
+    transition: 1s opacity;
+  }
+  .stopfade { 
+     opacity: .5;
+  }
+  
+  #intro1 { 
+    font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+    font-weight:100; 
+    background:gray;
+    color: white;
+    padding: 2rem;
+    width: 25%;
+    margin:6rem;
+    float: left;
+    font-size: 1.1rem;
+    border-right: 0.1em solid transparent;
+    border-radius: 25px;
+    background: url('/../../assets/bg.jpg');
+  }
+
+  @media screen and (max-width: 600px) {
+    #intro1 {
+      font-size: 0.75rem;
+      width: 100%;
+      float: center;
+      padding: 0rem;
+    }
+  
+  }
+
+  #intro2 { 
+    font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+    font-weight:100; 
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 2rem;
+    width: 23%;
+    margin:2rem;
+    float: left;
+    font-size: 1.1rem;
+    border-right: 0.1em solid transparent;
+    border-radius: 25px;
+    background: url('/../../assets/bg.jpg');
+  }
+  #intro3 { 
+    font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+    font-weight:100; 
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 2rem;
+    width: 22%;
+    margin:6rem;
+    float: right;
+    font-size: 1.1rem;
+    border-right: 0.1em solid transparent;
+    border-radius: 25px;
+    background: url('/../../assets/bg.jpg');
+  }
+  #video_copyright
+  {
+    font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+    font-weight:25; 
+    background: rgba(0,0,0,0.3);
+    color: white;
+    padding: 2rem;
+    width: 23%;
+    margin:-6rem;
+    float: right;
+    font-size: 0.75rem;
+  }
+  #media_copyright
+  {
+    font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+    font-weight:25; 
+    background: rgba(0,0,0,0.3);
+    color: white;
+    padding: 2rem;
+    width: 23%;
+    margin:2rem;
+    float: right;
+    font-size: 0.75rem;
+  }
+  h1 {
+    font-size: 4rem;
+    margin-top: 0;
+    letter-spacing: .3rem;
+    overflow: hidden;
+    border-right: 0.1em solid transparent;
+  }
+
+
+  #intro button { 
+    display: block;
+    width: 80%;
+    padding: .4rem;
+    border: none; 
+    margin: 1rem auto; 
+    font-size: 1.3rem;
+    background: rgba(255,255,255,0.23);
+    color: #fff;
+    border-radius: 3px; 
+    cursor: pointer;
+    transition: .3s background;
+  }
+  #intro button:hover { 
+     background: rgba(0,0,0,0.5);
+  }
+  
+  a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    background:rgba(0,0,0,0.5);
+    padding: .5rem;
+    transition: .6s background; 
+  }
+  a:hover{
+    background:rgba(0,0,0,0.9);
+  }
+  @media screen and (max-width: 500px) { 
+    div{width:70%;} 
+  }
+  @media screen and (max-device-width: 800px) {
+    #bgvid { display: none; }
+  }
+
+
+  @import url("https://fonts.googleapis.com/css?family=Anonymous+Pro");
+  html{
+    min-height: 100%;
+    overflow: hidden;
+  }
+.line{
+  position:relative;
+  top:50%;
+  width: 16em;
+  margin: 0 auto;
+  border-right:2px solid rgba(255,255,255,0.75);
+  font-size:100%;
+  text-align: center;
+  white-space:nowrap;
+  overflow:hidden;
+  transform:translateY(-50%);
+  border-right: 0.1em solid transparent;
+}
+
+
+
+/* animation */
+.anim-typewriter
+{
+  animation: typewriter 3s steps(40) 0s 1 normal both;
+}
+
+.anim-typewriter1
+{
+  animation: typewriter1 3s steps(40) 2s 1 normal both;
+}
+
+.anim-typewriter2
+{
+  animation: typewriter2 3s steps(40) 4s 1 normal both;
+}
+
+.anim-typewriter3
+{
+  animation: typewriter3 3s steps(40) 6s 1 normal both;
+}
+
+.anim-typewriter4
+{
+  animation: typewriter4 3s steps(40) 8s 1 normal both;
+}
+
+.anim-typewriter5
+{
+  animation: typewriter5 3s steps(40) 10s 1 normal both;
+}
+
+.anim-typewriter6
+{
+  animation: typewriter6 3s steps(40) 12s 1 normal both;
+}
+
+.anim-typewriter7
+{
+  animation: typewriter7 3s steps(40) 14s 1 normal both;
+}
+
+.anim-typewriter8
+{
+  animation: typewriter8 3s steps(40) 16s 1 normal both;
+}
+
+.anim-typewriter9
+{
+  animation: typewriter9 3s steps(40) 18s 1 normal both;
+}
+
+.anim-typewriter10
+{
+  animation: typewriter10 1s steps(10) 20s 1 normal both;
+}
+
+.anim-typewriter11
+{
+  animation: typewriter11 1s steps(10) 21s 1 normal both;
+}
+
+.anim-typewriter12
+{
+  animation: typewriter12 1s steps(10) 22s 1 normal both;
+}
+
+.anim-typewriter13
+{
+  animation: typewriter13 3s steps(20) 23s 1 normal both;
+}
+
+.anim-typewriter14
+{
+  animation: typewriter14 3s steps(20) 24s 1 normal both;
+}
+
+.anim-typewriter15
+{
+  animation: typewriter15 1s steps(20) 25s 1 normal both;
+}
+
+@keyframes typewriter{
+  from{
+    width:0;
+  }
+  to{
+width: 17em;
+  }
+}
+
+@keyframes typewriter1{
+  from{
+    width:0;
+  }
+  to{
+width: 17em;
+  }
+}
+
+@keyframes typewriter2{
+  from{
+    width:0;
+  }
+  to{
+width: 20em;
+  }
+}
+
+@keyframes typewriter3{
+  from{
+    width:0;
+  }
+  to{
+width: 20em;
+  }
+}
+
+@keyframes typewriter4{
+  from{
+    width:0;
+  }
+  to{
+width: 20em;
+  }
+}
+
+@keyframes typewriter5{
+  from{
+    width:0;
+  }
+  to{
+width: 17em;
+  }
+}
+
+
+@keyframes typewriter6{
+  from{
+    width:0;
+  }
+  to{
+width: 17em;
+  }
+}
+
+@keyframes typewriter7{
+  from{
+    width:0;
+  }
+  to{
+width: 17em;
+  }
+}
+
+@keyframes typewriter8{
+  from{
+    width:0;
+  }
+  to{
+width: 17em;
+  }
+}
+
+@keyframes typewriter9{
+  from{
+    width:0;
+  }
+  to{
+width: 17em;
+  }
+}
+
+@keyframes typewriter10{
+  from{
+    width:0;
+  }
+  to{
+width: 4em;
+  }
+}
+
+@keyframes typewriter11{
+  from{
+    width:0;
+  }
+  to{
+width: 7em;
+  }
+}
+
+@keyframes typewriter12{
+  from{
+    width:0;
+  }
+  to{
+width: 5em;
+  }
+}
+
+@keyframes typewriter13{
+  from{
+    width:0;
+  }
+  to{
+width: 17em;
+  }
+}
+
+@keyframes typewriter14{
+  from{
+    width:0;
+  }
+  to{
+width: 17em;
+  }
+}
+
+@keyframes typewriter15{
+  from{
+    width:0;
+  }
+  to{
+width: 5em;
+  }
+}
+
+
+
+@keyframes blinkTextCursor{
+  from,
+  to {
+    border-color: transparent
+  }
+  100% {
+    border-color:orange
+  }
+}
+
+@keyframes blinkTextCursor1{
+  from,
+  to {
+    border-color: transparent
+  }
+  80% {
+    border-color: blue;
+  }
+}

@@ -1,39 +1,54 @@
 <!--Navbar-->
-<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark blue lighten-1" [containerInside]="false">
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark blue lighten-1" [containerInside]="false" id="thenav">
 
   <!-- Navbar brand -->
-  <mdb-navbar-brand><a class="navbar-brand" href="#" routerLink="informations-personnelles">Hamdi BEJI</a></mdb-navbar-brand>
+  <mdb-navbar-brand><a class="navbar-brand" href="#" 
+    routerLink="intro"
+    (click)='addClass1 = false' (click)='addClass2 = false'
+    routerLinkActive="active"
+    >Hamdi BEJI</a></mdb-navbar-brand>
 
   <!-- Collapsible content -->
   <links>
 
     <!-- Links -->
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link waves-light" mdbWavesEffect routerLink="informations-personnelles">Consultant .NET
+    <ul class="navbar-nav mr-auto" >
+      <li class="nav-item ">
+        <a class="nav-link waves-light" mdbWavesEffect routerLinkActive="active"   
+        mdbWavesEffect routerLink="accueil"
+        (click)='addClass1 = false' (click)='addClass2 = false'
+        >Consultant .NET
           <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link waves-light" mdbWavesEffect routerLinkActive="active" routerLink="competences">Compétences
+        <a class="nav-link waves-light" mdbWavesEffect 
+        routerLinkActive="active" 
+        (click)='addClass1 = false' (click)='addClass2 = false'
+        routerLink="competences">Compétences
           <span class="sr-only">(current)</span>
 
         </a>
       </li>
       <li class="nav-item">
-        <a [routerLinkActive]="['active']" class="nav-link waves-light" mdbWavesEffect routerLink="formations-et-certifications">Formations et certifications</a>
+        <a  class="nav-link waves-light" mdbWavesEffect routerLinkActive="active" 
+        routerLink="formations-et-certifications"
+        (click)='addClass1 = false' (click)='addClass2 = false'
+        >Formations et certifications</a>
       </li>
 
       <!-- Dropdown -->
-      <li class="nav-item dropdown" dropdown>
-        <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+      <li class="nav-item dropdown" dropdown >
+        <a dropdownToggle mdbWavesEffect type="button" routerLink="experiences" routerLinkActive="active-link" 
+        [class.active]="addClass1" (click)='addClass2 = false'
+        class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
           Expériences<span class="caret"></span></a>
         <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu" >
 
           <div class="container" class="dropdown1"  >
-<div *ngFor="let experience of experiences" [routerLink]="['/experience', experience.id]">
+<div  *ngFor="let experience of experiences" [routerLink]="['/experience', experience.id]" >
 
-            <div class="row" class="dropdown-item waves-light" mdbWavesEffect >
-              <a>
+            <div class="row" class="dropdown-item waves-light" mdbWavesEffect>
+              <a (click)='addClass1 = true'>
               <div class="col-sm">
                 {{experience.organisme}}
               </div>
@@ -45,10 +60,11 @@
               </div>
             </a>
             </div>
-
+            <!--
             <div class="row" class="dropdown-item waves-light" mdbWavesEffect>
               <div class="divider dropdown-divider"></div>
             </div>
+            -->
           </div>
 
           </div>
@@ -59,7 +75,9 @@
 
       <!-- Dropdown -->
       <li class="nav-item dropdown" dropdown>
-        <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+        <a dropdownToggle mdbWavesEffect type="button" routerLink="cours" routerLinkActive="active-link"  
+        [class.active]="addClass2" (click)='addClass1 = false'
+        class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
           Cours<span class="caret"></span></a>
         <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu" >
 
@@ -67,7 +85,7 @@
 <div *ngFor="let course of courses" [routerLink]="['/course', course.id]">
 
             <div class="row" class="dropdown-item waves-light" mdbWavesEffect >
-              <a>
+              <a (click)='addClass2 = true'>
               <div class="col-sm">
                 {{course.title}}
               </div>
@@ -78,9 +96,10 @@
             </a>
             </div>
 
-            <div class="row" class="dropdown-item waves-light" mdbWavesEffect>
+            <!--<div class="row" class="dropdown-item waves-light" mdbWavesEffect>
               <div class="divider dropdown-divider"></div>
             </div>
+          -->
           </div>
 
           </div>
@@ -92,36 +111,44 @@
     <!-- Links -->
 
     <ul class="navbar-nav ml-auto nav-flex-icons">
+      <div style="margin: 0.75rem; color:purple;">
+        <span>{{h}} : </span>
+        <span>{{m}} : </span>
+        <span>{{s}}</span>
+      </div>
+     
+ 
+      <a  routerLink="/email">
+        <img src="assets\message_icon.png"  width="40" height="40" alt="" ></a>
 
-      <a  routerLink="/email" routerLinkActive="active-link">
-        <img src="assets\message_icon.png"  alt="" ></a>
-
-      <a href="https://www.youtube.com/channel/UCN0T2f7OskcHaD3J7D-dZnA" target="_blank">
-        <img src="assets\youtube_logo.png"  alt="" ></a>
+      <a class="img-responsive" href="https://www.youtube.com/channel/UCN0T2f7OskcHaD3J7D-dZnA" target="_blank">
+        <img src="assets\youtube_logo.png"   width="40" height="40" alt="" ></a>
       
       <a href="https://github.com/hamdibejinovencia" target="_blank">
-          <img src="assets\git_logo.png"  alt="" ></a>
+          <img src="assets\git_logo.png"  width="40" height="40" alt="" ></a>
 
       <a href="https://www.linkedin.com/in/hamdi-beji-35330338/" target="_blank">
-          <img src="assets\linkedin_logo.png"  alt="" class="img-fluid rounded-circle z-depth-0"></a>
+          <img src="assets\linkedin_logo.png"  width="40" height="40" alt="" class="img-fluid rounded-circle z-depth-0"></a>
       
 
       <li class="nav-item avatar dropdown" dropdown>
         <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
-          <img src="assets\644277_10200433667796277_342154042_n.jpg" alt="" class="img-fluid rounded-circle z-depth-0"></a>
+          <img width="40" height="40" src="assets\644277_10200433667796277_342154042_n.jpg" alt="" class="img-fluid rounded-circle z-depth-0"></a>
 
 
 
 
         <div *dropdownMenu class="dropdown-menu dropdown-menu-right dropdown dropdown-primary" role="menu">
-          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Under Construction</a>
-          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Under Construction</a>
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#"><img src="assets\iphone_icon.png">+33 7 58 82 96 29</a>
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#"><img src="assets\email_icon.png">hamdi.beji@novencia.com</a>
         </div>
       </li>
+  
     </ul>
+    
   </links>
   <!-- Collapsible content -->
-
+ 
 </mdb-navbar>
 <!--/.Navbar-->
 
@@ -134,3 +161,25 @@
 
 
 <router-outlet></router-outlet>
+
+<script>
+  $(function(){
+    $('a[href*="#"]').on('click', function(e) {
+        e.preventDefault()
+      
+       $('body, main').animate(
+            {
+            scrollTop: $($(this).attr('href')).offset().top,
+            },
+            500,
+            'linear'
+        )
+        oldObjChild=$('.active > a'); //gets active nav-item child nav-link
+        oldObj = $('.active'); //gets the active nav-item
+        oldObj.removeClass('active'); //remove active from old nav-item
+        oldObjChild.css('background-color','transparent'); //clear old active nav-item and nav-link style for bg color
+        $(this).parent().addClass('active'); //set the active class on the nav-item that called the function
+        $(this).css('background-color','red'); //set active clas background to red
+      });
+  });
+  </script>

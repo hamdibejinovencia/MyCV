@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 export class EmailComponent implements OnInit {
     registerForm: FormGroup;
     submitted = false;
-
+    showSpinner:boolean;
     constructor(private formBuilder: FormBuilder, public service: EmailService, public tostr:ToastrService, public router: Router) { }
 
     ngOnInit() {
@@ -34,9 +34,11 @@ export class EmailComponent implements OnInit {
 
     onSubmit() {
         this.submitted = true;
+        this.showSpinner =true;
         // console.log(this.registerForm.value);
         // stop here if form is invalid
         if (this.registerForm.invalid) {
+            this.showSpinner =false;
             return;
         }
 
@@ -49,8 +51,9 @@ export class EmailComponent implements OnInit {
             this.onReset();
             this.tostr.success('Message envoyé avec succès ...', 'Envoi d\'un message à Hamdi BEJI');
             this.router.navigateByUrl('');
+            this.showSpinner=false;
           });
-        }
+    }
         
   
 
